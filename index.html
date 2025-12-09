@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--Code Language-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inkly | Custom T-Shirt Order</title>
+
+    <!--Google Font Link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Link to CSS stylesheet-->
+    <link rel="stylesheet" href="CSS/style.css" />
+
+    <!--Link to JavaScript-->
+    <script src="JavaScript/script.js" defer></script>
+  </head>
+  <body>
+    <!--HEADER-->
+    <header class="site-header">
+      <div class="nav-wrapper">
+        <!--LOGO-->
+        <div class="logo">
+          <img src="Images/inkly_logo.png" alt="Inkly T-Shirt Company Logo" />
+        </div>
+        <!--NAVIGATION MENU-->
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">SERVICES</a></li>
+            <li><a href="#">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!--HERO IMAGES-->
+    <section class="hero-images">
+      <img src="Images/hero_image_1.jpg" alt="Stacked colorful t-shirts" />
+      <img src="Images/hero_image_2.jpg" alt="Row of colorful t-shirts" />
+    </section>
+    <!--ORDER FORM-->
+    <section class="form-section">
+      <h2 class="main-heading">CUSTOMER T-SHIRT ORDER</h2>
+      <p class="sub-heading">
+        Fill out the form to place your custom t-shirt order.
+      </p>
+      <!--FORM STARTS HERE-->
+      <form id="orderForm">
+        <!--FIRST AND LAST NAME-->
+        <div class="form-row">
+          <div class="form-group">
+            <label for="firstName">FIRST NAME</label>
+            <input
+              type="text"
+              id="firstName"
+              placeholder="Enter first name"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="lastName">LAST NAME</label>
+            <input
+              type="text"
+              id="lastName"
+              placeholder="Enter last name"
+              required
+            />
+          </div>
+        </div>
+
+        <!--COMPANY NAME-->
+        <div class="form-group">
+          <label for="companyName">COMPANY NAME (optional)</label>
+          <input
+            type="text"
+            id="companyName"
+            placeholder="Your business name"
+          />
+        </div>
+
+        <!--EMAIL AND QUANTITY-->
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">EMAIL</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="you@example.com"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="quantity">QUANTITY</label>
+            <input type="number" id="quantity" min="1" value="1" required />
+          </div>
+        </div>
+
+        <!--COLOR CHECKBOXES-->
+        <div class="form=group">
+          <h4>COLOR ($20 each)</h4>
+          <!--3 checkboxes required-->
+          <label>
+            <input type="checkbox" name="color" value="20" /> White</label
+          >
+          <label><input type="checkbox" name="color" value="20" /> Blue</label>
+          <label><input type="checkbox" name="color" value="20" /> Black</label>
+        </div>
+
+        <!--SIZES (RADIOS)-->
+        <div class="form-group">
+          <h4>SIZE</h4>
+
+          <label><input type="radio" name="size" value="0" /> Medium</label>
+          <label><input type="radio" name="size" value="0" /> Large</label>
+          <label
+            ><input type="radio" name="size" value="2" /> Extra Large
+            (+$2)</label
+          >
+        </div>
+
+        <!--DELIVERY DATE-->
+        <div class="form-group">
+          <label for="deliveryDate">DELIVERY DATE</label>
+          <input type="date" id="deliveryDate" required />
+        </div>
+
+        <!--NOTES-->
+        <div class="form-group">
+          <label for="notes">ADDITIONAL NOTES</label>
+          <textarea
+            id="notes"
+            rows="4"
+            placeholder="Optional Instructions"
+          ></textarea>
+        </div>
+
+        <!--BUTTONS-->
+        <div class="button-row">
+          <button type="submit" class="btn-primary">PLACE ORDER</button>
+          <button type="reset" class="btn-secondary" id="resetBtn">
+            RESET
+          </button>
+        </div>
+      </form>
+
+      <!--ORDER SUMMARY DISPLAY (DOM OUTPUT)-->
+      <section id="orderSummary" class="order-summary">
+        <h3>Order Summary</h3>
+        <div id="summaryContent"></div>
+      </section>
+    </section>
+
+    <!--FOOTER-->
+    <footer class="site-footer">
+      <p>&copy; 2025 Inkly</p>
+    </footer>
+  </body>
+</html>
