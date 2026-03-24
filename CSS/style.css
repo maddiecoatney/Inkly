@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  font-family: "Monsterrat", sans-serif;
+}
+
+/* HEADER */
+.site-header {
+  padding: 15px;
+}
+
+/* NAVIGATION */
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 30px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+/* HERO IMAGES */
+.hero-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  width: 100%;
+}
+
+.hero-images img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* FORM SECTION */
+.form-section {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.main-heading {
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 50px;
+}
+
+.sub-heading {
+  text-align: center;
+  color: #666;
+  margin-bottom: 45px;
+}
+
+.form-row {
+  display: flex;
+  gap: 35px;
+}
+
+.form-group {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+h4 {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  background-color: #f3f3f3;
+  border: 1px solid #ddd;
+}
+
+button {
+  cursor: pointer;
+}
+
+.button-row {
+  display: flex;
+  gap: 20px;
+}
+
+.btn-primary {
+  background-color: black;
+  color: white;
+  padding: 14px 32px;
+  border: none;
+}
+
+.btn-secondary {
+  background-color: #eee;
+  padding: 14px 32px;
+  border: none;
+}
+
+/* SUMMARY AREA */
+.order-summary {
+  margin-top: 30px;
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+}
+
+.site-footer {
+  text-align: center;
+  padding: 12px;
+  border-top: 1px solid #ddd;
+}
